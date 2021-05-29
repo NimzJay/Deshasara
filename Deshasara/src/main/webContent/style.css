@@ -218,12 +218,19 @@ img {
     margin-left: 200px;
 }
 
-ul,
-ol {
+ul {
     margin: 0;
     padding: 0;
     padding-right: 10px;
     list-style-image: url('img/src-img/leaves.png');
+    line-height: 2;
+    list-style-position: inside
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
     line-height: 2;
     list-style-position: inside
 }
@@ -656,11 +663,20 @@ p {
 	top: -30px;
 }
 
+.carousel, .slide,
+.carousel .carousel-inner,
+.carousel .carousel-item,
+.carousel .carousel-item img,
+.carousel .carousel-control {
+  	border-top-left-radius: 100px;
+  	border-bottom-right-radius: 100px;
+  	overflow: hidden;
+}
+
 
 .carousel-inner > .carousel-item > img {
   object-fit: cover;
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
+
 }
 
 .carousel-inner > .carousel-item > carousel-caption > h5 {
@@ -740,20 +756,25 @@ p {
     margin-bottom: 0;
 }
 
-.single-feature > i {
-    color: #E76703;
+.single-feature > .row > #article > i {
+    color: #307f33;
     font-size: 30px;
     display: inline-block;
-    float: left;
-    margin-right: 10px;
 }
 
-.single-feature > h5 {
-    font-size: 22px;
-    color: #f9fbfd;
+.single-feature > .row > #article > img {
+    width: 75px;
+	height:75px;
+	margin: auto;    
+    display: block;
 }
 
-.single-feature > p {
+.single-feature > .row > #article > h5 {
+    font-size: 23px;
+    color: black;
+}
+
+.single-feature > .row > #article > p {
     margin-top: 15px;
 }
 
@@ -763,23 +784,23 @@ p {
 
 .member-image {
     margin-bottom: 30px;
-    border-radius: 120px 120px 120px 120px;
     position: relative;
     z-index: 1;
 }
 
 .member-image img {
-    border-radius: 120px;
+	border-radius: 50%;
 }
 
 .member-text > center {
-    color: white;
+    color: black;
+    font-size: 18px;
 }
 
-.member-text > p {
-    color: white;
+.member-text > center > p {
+    color: gray;
     margin-bottom: 0;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .team-hover-effects {
@@ -802,7 +823,7 @@ p {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-.team-social-icon {
+/* .team-social-icon {
     position: absolute;
     z-index: 5;
     top: 0;
@@ -818,19 +839,24 @@ p {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-}
+    padding-bottom: 20px;
+} */
 
 .team-social-icon > a {
-    font-size: 14px;
-    color: #fff;
-    /*background: #9a81d7; */
+    font-size: 16px;
+    color: #307f33;
     height: 40px;
     width: 40px;
-    line-height: 40px;
+    line-height: 20px;
     text-align: center;
-    /*border-radius: 10px 10px 10px 0;*/
     display: block;
     margin: 2.5px;
+    padding-top: 0px;
+    display: inline;
+}
+
+.team-social-icon > a:hover {
+	color: #a5d355;
 }
 
 .single-team-member {
@@ -841,18 +867,6 @@ p {
 :: 9.0 Contact Us Area CSS 
 -------------------------- */
 
-.address-text > p,
-.phone-text > p,
-.email-text > p {
-    /* font-size: 18px; */
-    margin-bottom: 10px;
-}
-
-.address-text > p > span,
-.phone-text > p > span,
-.email-text > p > span {
-    color: #E76703;
-}
 
 .footer-contact-area .line-shape {
     margin-left: 0;
@@ -912,7 +926,7 @@ p {
 -------------------------- */
 
 .footer-text > h2 {
-    color: #E76703;
+    color: #307f33;
     font-size: 72px;
     font-weight: 700;
 }
@@ -963,7 +977,7 @@ p {
 }
 
 .footer-social-icon > p > span > i:hover {
-    color: #DCE35B;
+    color: #a5d355;
 }
 
 .footer-social-icon > p > a> span > i {
@@ -971,7 +985,7 @@ p {
 }
 
 .footer-social-icon > p > a> span > i:hover {
-    color: #DCE35B;
+    color: #a5d355;
 }
 
 .social-icon {
