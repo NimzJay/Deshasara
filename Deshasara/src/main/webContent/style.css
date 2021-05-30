@@ -763,8 +763,8 @@ p {
 }
 
 .single-feature > .row > #article > img {
-    width: 75px;
-	height:75px;
+    width: 60%;
+	height:100%;
 	margin: auto;    
     display: block;
 }
@@ -774,14 +774,22 @@ p {
     color: black;
 }
 
-.single-feature > .row > #article > p {
+.single-feature > .row > p {
     margin-top: 15px;
+    
+}
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 5; /* number of lines to show */
+	-webkit-box-orient: vertical;
 }
 
 /* --------------------------
 :: 8.0 Team Area CSS 
 -------------------------- */
-
 .member-image {
     margin-bottom: 30px;
     position: relative;
@@ -823,25 +831,6 @@ p {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-/* .team-social-icon {
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-bottom: 20px;
-} */
-
 .team-social-icon > a {
     font-size: 16px;
     color: #307f33;
@@ -880,22 +869,6 @@ p {
     margin-bottom: 50px;
 }
 
-#name {
-    font-size: 18px;
-    padding: 15px 15px;
-    border-radius: 25px 25px 25px 0;
-}
-
-#email {
-    font-size: 18px;
-    padding: 15px 15px;
-    border-radius: 25px 25px 25px 0;
-}
-
-#message {
-    border-radius: 25px 25px 25px 0;
-}
-
 .btn.submit-btn {
     background: #a5d355;
     height: 48px;
@@ -921,6 +894,22 @@ p {
     margin-bottom: 50px;
 }
 
+.footer-social-icon > span > i {
+    color: #307f33;
+}
+
+.footer-social-icon > span > i:hover {
+    color: #a5d355;
+}
+
+.footer-social-icon > p > a > span > i {
+    color: #307f33;
+}
+
+.footer-social-icon > p > a > span > i:hover {
+    color: #a5d355;
+}
+
 /* --------------------------
 :: 10.0 Footer Area CSS
 -------------------------- */
@@ -941,6 +930,7 @@ p {
     font-weight: 500;
     border-radius: 10px 0px 10px 0px;
     margin-right: 10px;
+    z-index: 100;
 }
 
 .footer-social-icon > a > #fb:hover {
@@ -970,22 +960,6 @@ p {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
-}
-
-.footer-social-icon > p > span > i {
-    color: #307f33;
-}
-
-.footer-social-icon > p > span > i:hover {
-    color: #a5d355;
-}
-
-.footer-social-icon > p > a> span > i {
-    color: #307f33;
-}
-
-.footer-social-icon > p > a> span > i:hover {
-    color: #a5d355;
 }
 
 .social-icon {
