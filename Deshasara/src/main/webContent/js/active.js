@@ -1,4 +1,4 @@
-(function ($) {
+(function($) {
     'use strict';
 
     // [ JS Active Code Index ]
@@ -119,7 +119,7 @@
         });
     }
 
-    $('a[href="#"]').click(function ($) {
+    $('a[href="#"]').click(function($) {
         $.preventDefault()
     });
 
@@ -130,7 +130,7 @@
     }
 
     // :: 8.0 Sticky Active Code
-    $window.on('scroll', function () {
+    $window.on('scroll', function() {
         if ($window.scrollTop() > 48) {
             $('.header_area').addClass('sticky slideInDown');
         } else {
@@ -139,8 +139,8 @@
     });
 
     // :: 9.0 Preloader Active code
-    $window.on('load', function () {
-        $('#preloader').fadeOut('slow', function () {
+    $window.on('load', function() {
+        $('#preloader').fadeOut('slow', function() {
             $(this).remove();
         });
     });
