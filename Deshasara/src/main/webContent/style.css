@@ -3,8 +3,9 @@
 	#F3AE18 yellow
 	#e83e8c pink
 	#434343 gray */
+
 :element {
-	--drkgrn: #307f33;
+    --drkgrn: #307f33;
     --grn: #45B649;
     --midgrn: #7abd44;
     --smgrn: #a5d355;
@@ -14,6 +15,7 @@
     --pink: #251608;
     --gray: #434343;
 }
+
 
 /* --- [Master Stylesheet] ----
 :: 1.0 Base CSS 
@@ -45,13 +47,13 @@
 * {
     margin: 0;
     padding: 0;
-    
 }
 
 body {
     font-family: 'Cabin', sans-serif;
-    background: #434343; /* #e65c00;  fallback for old browsers */
-	overflow-x: hidden;
+    background: #434343;
+    /* #e65c00;  fallback for old browsers */
+    overflow-x: hidden;
 }
 
 h1,
@@ -266,20 +268,19 @@ p {
     font-size: 16px;
     font-weight: 300;
     margin-top: 0;
-    line-height:30px;
+    line-height: 30px;
 }
 
-.heading-text > p {
+.heading-text>p {
     font-size: 16px;
 }
 
-.section-heading > h2 {
+.section-heading>h2 {
     font-weight: 300;
     color: #307f33;
     font-size: 48px;
     margin: 0;
 }
-
 
 .section-heading {
     margin-bottom: 60px;
@@ -324,8 +325,8 @@ p {
 }
 
 .colorlib-load {
-    -webkit-animation: 2000ms linear 0s normal none infinite running colorlib-load;
-    animation: 2000ms linear 0s normal none infinite running colorlib-load;
+    /* -webkit-animation: 2000ms linear 0s normal none infinite running colorlib-load; */
+    /* animation: 2000ms linear 0s normal none infinite running colorlib-load; */
     background: transparent none repeat scroll 0 0;
     border-color: #dddddd #dddddd #45B649;
     border-radius: 50%;
@@ -361,6 +362,7 @@ p {
     }
 }
 
+
 /* ------------------------------
 :: 2.0 Header Navigation Area CSS
 --------------------------------- */
@@ -390,7 +392,7 @@ p {
 }
 
 .nav-item {
-	width: 100%;
+    width: 100%;
 }
 
 .menu_area #nav .nav-link {
@@ -412,17 +414,20 @@ p {
 }
 
 .googleTrans {
-	position: absolute;
+    position: absolute;
     top: 65px;
     right: -10px;
 }
 
 .header_area.sticky {
-    background: #a5d355;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #a5d355;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45B649, #DCE35B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45B649, #DCE35B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     height: 70px;
     position: fixed;
     top: 0;
@@ -442,8 +447,8 @@ p {
 }
 
 .header_area .menu_area nav #ca-navbar #nav .nav-item .nav-link {
-	padding-top: 20px;
-	padding-bottom: 8px;
+    padding-top: 20px;
+    padding-bottom: 8px;
 }
 
 .header_area.sticky .navbar {
@@ -453,20 +458,19 @@ p {
 .header_area .menu_area nav #ca-navbar #nav .nav-item .nav-link:focus,
 .header_area .menu_area nav #ca-navbar #nav .nav-item .nav-link:hover,
 .header_area .menu_area nav #ca-navbar #nav .nav-item .nav-link:active {
-	background-color: rgb(255,255,255, 0.1);
-	border-bottom: 10px solid #DCE35B;
-	color: white; 
-	border-top-left-radius: 50px;
-	border-bottom-right-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-bottom: 10px solid #DCE35B;
+    color: white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .highlighted {
-	
-	background-color: rgb(255,255,255, 0.3);
-	border-bottom: 10px solid #DCE35B;
-	color: white; 
-	border-top-left-radius: 50px;
-  	border-bottom-right-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-bottom: 10px solid #DCE35B;
+    color: white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .header_area.sticky .logo {
@@ -478,6 +482,7 @@ p {
     width: 190px;
     height: 60px;
 }
+
 
 /* --------------------------
 :: 3.0 Welcome Area CSS
@@ -531,13 +536,12 @@ p {
     z-index: 9;
 }
 
-
 .welcome-thumb img {
     height: auto;
     width: 100%;
 }
 
-.wellcome-heading > h2 {
+.wellcome-heading>h2 {
     font-size: 100px;
     color: #ffffff;
     font-weight: 700;
@@ -580,11 +584,11 @@ p {
     border-radius: 30px;
 }
 
-.wellcome-heading > p {
+.wellcome-heading>p {
     color: #fff;
 }
 
-.wellcome-heading > h3 {
+.wellcome-heading>h3 {
     font-size: 332px;
     position: absolute;
     top: -134px;
@@ -600,16 +604,17 @@ p {
     margin-bottom: 100px;
 }
 
+
 /* --------------------------
 :: 4.0 About Us Area CSS
 -------------------------- */
 
-.single-icon > i {
+.single-icon>i {
     font-size: 36px;
     color: #000000;
 }
 
-.single-special > h4 {
+.single-special>h4 {
     font-size: 22px;
     color: #307f33;
 }
@@ -618,7 +623,7 @@ p {
     margin-bottom: 25px;
 }
 
-.single-special > h4 {
+.single-special>h4 {
     font-size: 22px;
     color: #307f33;
     margin-bottom: 15px;
@@ -635,7 +640,7 @@ p {
     background-color: #f9fbfd;
 }
 
-.special_description_content > h2 {
+.special_description_content>h2 {
     color: #307f33;
     font-size: 48px;
     margin-bottom: 30px;
@@ -643,45 +648,46 @@ p {
 
 .single-special:hover {
     -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
-            box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
 }
 
 .single-special p {
     margin-bottom: 0;
 }
 
+
 /* --------------------------
 :: 5.0 Projects Area CSS
 -------------------------- */
 
-.carousel-inner > .carousel-item {
-  width: 100%;
-  height: 65vh;
+.carousel-inner>.carousel-item {
+    width: 100%;
+    height: 65vh;
 }
 
 .carousel {
-	top: -30px;
+    top: -30px;
 }
 
-.carousel, .slide,
+.carousel,
+.slide,
 .carousel .carousel-inner,
 .carousel .carousel-item,
 .carousel .carousel-item img,
 .carousel .carousel-control {
-  	border-top-left-radius: 100px;
-  	border-bottom-right-radius: 100px;
-  	overflow: hidden;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    overflow: hidden;
 }
 
-
-.carousel-inner > .carousel-item > img {
-  object-fit: cover;
-
+.carousel-inner>.carousel-item>img {
+    object-fit: cover;
 }
 
-.carousel-inner > .carousel-item > carousel-caption > h5 {
-  color: white;
+.carousel-inner>.carousel-item>carousel-caption>h5 {
+    color: white;
 }
+
 
 /* --------------------------
 :: 6.0 Products Area CSS
@@ -700,15 +706,14 @@ p {
 }
 
 .price {
-	
-	font-size: 25px; 
-	color: white;
-	background-color: #a5d355;
-	width: 100px;
-	border-top-left-radius: 40px;
-	border-bottom-right-radius: 40px;
-	margin-left: auto;
-  	margin-right: auto;
+    font-size: 25px;
+    color: white;
+    background-color: #a5d355;
+    width: 100px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .app_screenshots_slides .center .single-shot {
@@ -740,6 +745,7 @@ p {
     text-align: center;
 }
 
+
 /* --------------------------
 :: 7.0 Articles Area CSS
 -------------------------- */
@@ -752,44 +758,46 @@ p {
     background-color: #f9fbfd;
 }
 
-.single-feature > p {
+.single-feature>p {
     margin-bottom: 0;
 }
 
-.single-feature > .row > #article > i {
+.single-feature>.row>#article>i {
     color: #307f33;
     font-size: 30px;
     display: inline-block;
 }
 
-.single-feature > .row > #article > img {
+.single-feature>.row>#article>img {
     width: 60%;
-	height:100%;
-	margin: auto;    
+    height: 100%;
+    margin: auto;
     display: block;
 }
 
-.single-feature > .row > #article > h5 {
+.single-feature>.row>#article>h5 {
     font-size: 23px;
     color: black;
 }
 
-.single-feature > .row > p {
+.single-feature>.row>p {
     margin-top: 15px;
-    
 }
 
 .ellipsis {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 5; /* number of lines to show */
-	-webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
+
 
 /* --------------------------
 :: 8.0 Team Area CSS 
 -------------------------- */
+
 .member-image {
     margin-bottom: 30px;
     position: relative;
@@ -797,15 +805,15 @@ p {
 }
 
 .member-image img {
-	border-radius: 50%;
+    border-radius: 50%;
 }
 
-.member-text > center {
+.member-text>center {
     color: black;
     font-size: 18px;
 }
 
-.member-text > center > p {
+.member-text>center>p {
     color: gray;
     margin-bottom: 0;
     font-size: 15px;
@@ -831,7 +839,7 @@ p {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-.team-social-icon > a {
+.team-social-icon>a {
     font-size: 16px;
     color: #307f33;
     height: 40px;
@@ -844,24 +852,24 @@ p {
     display: inline;
 }
 
-.team-social-icon > a:hover {
-	color: #a5d355;
+.team-social-icon>a:hover {
+    color: #a5d355;
 }
 
 .single-team-member {
     margin-bottom: 50px;
 }
 
+
 /* --------------------------
 :: 9.0 Contact Us Area CSS 
 -------------------------- */
-
 
 .footer-contact-area .line-shape {
     margin-left: 0;
 }
 
-.footer-contact-area .heading-text > p {
+.footer-contact-area .heading-text>p {
     margin-top: 50px;
 }
 
@@ -890,37 +898,38 @@ p {
     background: #f5f9fc;
 }
 
-.footer-text > p {
+.footer-text>p {
     margin-bottom: 50px;
 }
 
-.footer-social-icon > span > i {
+.footer-social-icon>span>i {
     color: #307f33;
 }
 
-.footer-social-icon > span > i:hover {
+.footer-social-icon>span>i:hover {
     color: #a5d355;
 }
 
-.footer-social-icon > p > a > span > i {
+.footer-social-icon>p>a>span>i {
     color: #307f33;
 }
 
-.footer-social-icon > p > a > span > i:hover {
+.footer-social-icon>p>a>span>i:hover {
     color: #a5d355;
 }
+
 
 /* --------------------------
 :: 10.0 Footer Area CSS
 -------------------------- */
 
-.footer-text > h2 {
+.footer-text>h2 {
     color: #307f33;
     font-size: 72px;
     font-weight: 700;
 }
 
-.footer-social-icon > a > i {
+.footer-social-icon>a>i {
     background: #307f33;
     font-size: 14px;
     color: #ffffff;
@@ -933,28 +942,31 @@ p {
     z-index: 100;
 }
 
-.footer-social-icon > a > #fb:hover {
+.footer-social-icon>a>#fb:hover {
     background: #1778F2;
     color: #fff;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
 }
-.footer-social-icon > a > #tw:hover {
+
+.footer-social-icon>a>#tw:hover {
     background: #1DA1F2;
     color: #fff;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
 }
-.footer-social-icon > a > #ig:hover {
+
+.footer-social-icon>a>#ig:hover {
     background: #DD2A7B;
     color: #fff;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
 }
-.footer-social-icon > a > #gp:hover {
+
+.footer-social-icon>a>#gp:hover {
     background: #DB4437;
     color: #fff;
     -webkit-transition-duration: 500ms;
@@ -981,7 +993,7 @@ p {
     color: #c0c0c0;
 }
 
-.footer-social-icon > a .active {
+.footer-social-icon>a .active {
     background: grey;
 }
 
@@ -998,13 +1010,14 @@ p {
 }
 
 .footer-bg {
-    background: #434343 /* #e65c00 */;  /* fallback for old browsers */
-	/* background: -webkit-linear-gradient(to right, #F9D423, #e65c00);  Chrome 10-25, Safari 5.1-6
+    background: #434343/* #e65c00 */
+    ;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #F9D423, #e65c00);  Chrome 10-25, Safari 5.1-6
 	background: linear-gradient(to left, #F9D423, #e65c00); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
 }
 
-.copyright-text > p {
+.copyright-text>p {
     margin-bottom: 0;
     color: #c0c0c0;
 }
@@ -1034,5 +1047,3 @@ p {
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
 }
-
-
